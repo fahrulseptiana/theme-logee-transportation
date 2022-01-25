@@ -1,0 +1,3 @@
+[submodule "src/legion-tokens"]
+	path = src/legion-tokens
+	url = https://github.com/fahrulseptiana/legion-tokens
