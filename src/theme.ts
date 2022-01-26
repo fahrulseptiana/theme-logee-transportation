@@ -2,7 +2,7 @@ import {makeTheme} from '@theme-ui/css/utils'
 
 import { button } from '.'
 
-import * as token from './legion-tokens/output/js/logee-sales'
+import * as token from './legion-tokens/output/js/logee-transportation'
 
 export const logeeTheme = makeTheme({
   buttons: {
