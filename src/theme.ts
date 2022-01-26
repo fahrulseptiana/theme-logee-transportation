@@ -10,6 +10,7 @@ export const logeeTheme = makeTheme({
       ...button,
       backgroundColor: token.buttonsSolidBackgroundColor,
       fontFamily: token.buttonsSolidFontFamily,
+      color: token.buttonsSolidColor,
       '&:hover': {
         backgroundColor: token.buttonsSolidHoverBackgroundColor
       },
@@ -20,13 +21,15 @@ export const logeeTheme = makeTheme({
         backgroundColor: `${token.buttonsSolidFocusBackgroundColor} !important`
       },
       '&:disabled': {
-        backgroundColor: `${token.buttonsSolidDisabledBackgroundColor} !important`
+        backgroundColor: `${token.buttonsSolidDisabledBackgroundColor} !important`,
+        backgroundColor: `${token.buttonsSolidDisabledColor} !important`,
       }
     },
     soft: {
       ...button,
       backgroundColor: token.buttonsSoftBackgroundColor,
       fontFamily: token.buttonsSoftFontFamily,
+      color: token.buttonsSolidColor,
       '&:hover': {
         backroundColor: token.buttonsSoftHoverBackgroundColor
       },
