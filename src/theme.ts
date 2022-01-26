@@ -1,50 +1,46 @@
-import {theme} from '@legion-ui/theme-base'
 import {makeTheme} from '@theme-ui/css/utils'
 
-import { merge, button } from '.'
-import { Theme } from '@theme-ui/css/dist/declarations/src/types'
+import { button } from '.'
 
-import {buttonsSolidBackgroundColor, buttonsSoftBackgroundColor, buttonsSolidFontFamily, buttonsSoftFontFamily, buttonsSolidHoverBackgroundColor, buttonsSolidActiveBackgroundColor, buttonsSolidFocusBackgroundColor, buttonsSolidDisabledBackgroundColor, buttonsSoftHoverBackgroundColor, buttonsSoftActiveBackgroundColor, buttonsSoftFocusBackgroundColor, buttonsSoftDisabledBackgroundColor} from './legion-tokens/output/js/logee-transportation'
+import * as token from './legion-tokens/output/js/logee-sales'
 
-const obj: Theme = {...merge(theme, {
+export const logeeTheme = makeTheme({
   buttons: {
     solid: {
       ...button,
-      backgroundColor: buttonsSolidBackgroundColor,
-      fontFamily: buttonsSolidFontFamily,
+      backgroundColor: token.buttonsSolidBackgroundColor,
+      fontFamily: token.buttonsSolidFontFamily,
       '&:hover': {
-        backroundColor: buttonsSolidHoverBackgroundColor
+        backgroundColor: token.buttonsSolidHoverBackgroundColor
       },
       '&:active': {
-        backgroundColor: `${buttonsSolidActiveBackgroundColor} !important`
+        backgroundColor: `${token.buttonsSolidActiveBackgroundColor} !important`
       },
       '&:focus': {
-        backgroundColor: `${buttonsSolidFocusBackgroundColor} !important`
+        backgroundColor: `${token.buttonsSolidFocusBackgroundColor} !important`
       },
       '&:disabled': {
-        backgroundColor: `${buttonsSolidDisabledBackgroundColor} !important`
+        backgroundColor: `${token.buttonsSolidDisabledBackgroundColor} !important`
       }
     },
     soft: {
       ...button,
-      backgroundColor: buttonsSoftBackgroundColor,
-      fontFamily: buttonsSoftFontFamily,
+      backgroundColor: token.buttonsSoftBackgroundColor,
+      fontFamily: token.buttonsSoftFontFamily,
       '&:hover': {
-        backroundColor: buttonsSoftHoverBackgroundColor
+        backroundColor: token.buttonsSoftHoverBackgroundColor
       },
       '&:active': {
-        backgroundColor: `${buttonsSoftActiveBackgroundColor} !important`
+        backgroundColor: `${token.buttonsSoftActiveBackgroundColor} !important`
       },
       '&:focus': {
-        backgroundColor: `${buttonsSoftFocusBackgroundColor} !important`
+        backgroundColor: `${token.buttonsSoftFocusBackgroundColor} !important`
       },
       '&:disabled': {
-        backgroundColor: `${buttonsSoftDisabledBackgroundColor} !important`
+        backgroundColor: `${token.buttonsSoftDisabledBackgroundColor} !important`
       }
     },
   }
-})}
-
-export const logeeTheme = makeTheme(obj)
+})
 
 export default logeeTheme
