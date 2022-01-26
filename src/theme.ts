@@ -22,7 +22,7 @@ export const logeeTheme = makeTheme({
       },
       '&:disabled': {
         backgroundColor: `${token.buttonsSolidDisabledBackgroundColor} !important`,
-        backgroundColor: `${token.buttonsSolidDisabledColor} !important`,
+        color: `${token.buttonsSolidDisabledColor} !important`,
       }
     },
     soft: {
