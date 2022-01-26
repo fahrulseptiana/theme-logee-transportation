@@ -29,7 +29,7 @@ export const logeeTheme = makeTheme({
       ...button,
       backgroundColor: token.buttonsSoftBackgroundColor,
       fontFamily: token.buttonsSoftFontFamily,
-      color: token.buttonsSolidColor,
+      color: token.buttonsSoftColor,
       '&:hover': {
         backroundColor: token.buttonsSoftHoverBackgroundColor
       },
